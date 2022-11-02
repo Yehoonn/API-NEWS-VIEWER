@@ -50,6 +50,7 @@ const NewsBox = styled.div`
 // data를 받아오지 못하면 null, 받아 온다면 데이터의 배열 요소만큼 NewsItem을 그려낸다
 
 const NewsList = ({ category }) => {
+  console.log("hello");
   const key = useRef(0);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
